@@ -5,7 +5,6 @@ def tiger_room():
 	print "It's lying in front of the next door."
 	print "Will you yell at it or rub its belly?"
 	
-	# how to incorporate "or sing it a song?"
 	
 	next = raw_input("> ")
 	if "yell" in next or "Yell" in next:
@@ -19,10 +18,6 @@ def tiger_room():
 	else:
 		die("You took too long and the tiger ate you")
 		
-	
-# figure out third branch and put it here. Where else could the story go?	
-	#else :
-		#print "
 
 def gold_room():
 	print "How will you choose to enter the last door?"
@@ -77,7 +72,7 @@ def portal_room():
 	print ["A. 'Whole lot of nope. I'm going back to the left door.'", 
 	"B. Stare into the void.", "C. Step through."]
 	
-	# list isn't printing right, also not being used as a list
+	# list isn't printing right, also I'm not sure this is how you're supposed to use lists
 	
 	next = raw_input("> ")
 	
@@ -137,7 +132,7 @@ def start():
 start()	
 
 
-#Need to figure out where to incorporate a list
+#Need to figure out where to incorporate a list and make sure I'm using it correctly
 
 
 
