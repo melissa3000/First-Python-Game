@@ -67,6 +67,14 @@ def wizard_room():
 		print "You did it, %s! You may pass" % next
 		portal_room()
 		# how to make the answer not case sensitive?
+		# You can just convert the string into lower or uppercase for comparison. Like this example:
+		#string1 = 'Hello'
+		#string2 = 'hello'
+		#
+		#if string1.lower() == string2.lower():
+		#    print "The strings are the same (case insensitive)"
+		#else:
+		#    print "The strings are not the same (case insensitive)"
 		
 	else:
 		die("You answered incorrectly and are turned into a newt.")
@@ -124,6 +132,15 @@ def die(why):
 def start():
 	print "You wake up in a room with two doors."
 	print "Will you go through the door on the left or right?"
+	
+	#try making a one letter input as an acceptable command. You could ask like this:  
+	#
+	#print "Will you go through the door on the [l]eft or [r]ight?"
+	#
+	#next = raw_input("> ")
+	#if "l" in next or "left" in next:
+	#	tiger_room()
+	#elif "r" in next ot "right" in next:
 	
 	next = raw_input("> ")
 	if next == "left":
